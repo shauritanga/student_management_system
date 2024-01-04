@@ -1,0 +1,28 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "Create New Student";
+}
+
+
+    <form method="post" class="col-8" style="width:100vw">
+        <div class="border p-3 mt-4">
+            <div class="row pb-2">
+                <h2 class="text-primary">Create Student</h2>
+                <hr />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" placeholder="Enter a full name">
+            </div>
+            <div class="mb-3">
+                <label asp-for="Phone"></label>
+                <input asp-for="Phone" class="form-control" placeholder="+255655591660">
+            </div>
+            <input type="submit" class="btn btn-primary form-control" />
+
+        </div>
+    </form>
+
+    
+
+
